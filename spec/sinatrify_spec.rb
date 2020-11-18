@@ -4,10 +4,10 @@ describe Sinatrify do
   describe Sinatrify::DSL do
     context "injecting internal router when included" do
       it "should have the sinatrify_router in a class" do
-        Base.respond_to?(:sinatrify_router).should be_true
+        Base.respond_to?(:sinatrify_router).should be(true)
       end
       it "should have the sinatrify_router in a instance" do
-        Base.new.respond_to?(:sinatrify_router).should be_true
+        Base.new.respond_to?(:sinatrify_router).should be(true)
       end
       it "should set the internal router to new route set" do
         Base.new.sinatrify_router.class.should == ActionDispatch::Routing::RouteSet

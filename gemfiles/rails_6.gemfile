@@ -2,7 +2,6 @@
 
 source "http://rubygems.org"
 
-gem "rails", "3.1.8"
-gem "sinatrify", :path=>"../"
+gem "rails", "~> 6.0.3"
 
-gemspec :path=>"../"
+gemspec path: "../"

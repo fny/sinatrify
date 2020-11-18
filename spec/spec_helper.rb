@@ -18,3 +18,7 @@ class MockRouter
     "called with #{env}"
   end
 end
+
+RSpec.configure do |config|
+  config.expect_with(:rspec) { |c| c.syntax = :should }
+end

@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "actionpack",       ">= 3.0.0"
-  s.add_dependency "activesupport",    ">= 3.0.0"
+  s.add_dependency "actionpack",       ">= 6.0.0"
+  s.add_dependency "activesupport",    ">= 6.0.0"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
